@@ -1,0 +1,110 @@
+/* my resume (style.css) */
+
+html {
+    background-color: azure;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.navbar * {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Bungee Spice', cursive;
+}
+
+.developer {
+    font-size: 40px;
+    font-family: 'Lugrasimo', cursive;
+}
+
+#span-dev {
+    text-decoration: underline;
+    color: white;
+}
+
+.gradient-background {
+    background: linear-gradient(1deg, azure, navy);
+    background-size: 1% 100%;
+}
+
+img[alt="hasan image"] {
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px azure;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    min-width: 50%;
+}
+
+#Footer {
+    background-color: #1f2937;
+    color: azure;
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .developer {
+        font-size: 28px;
+        padding-bottom: 100px;
+    }
+
+    img[alt="computer image"] {
+        margin-bottom: 150px;
+        height: 250px;
+    }
+
+    img[alt="hasan image"] {
+        height: 200px;
+        width: 200px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        min-width: none;
+    }
+
+    #Footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .developer {
+        padding-bottom: 50px;
+    }
+
+    img[alt="computer image"] {
+        height: 200px;
+    }
+}
